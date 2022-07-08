@@ -2,7 +2,7 @@ import { Stack } from '@chakra-ui/react'
 import React from 'react'
 import DrawerNav from './Drawer'
 
-function Navbar() {
+function Sidebar() {
   return (
     <Stack w='100vw' h='60px' justifyContent='flex-end' direction='row' p={2}>
       <DrawerNav />
@@ -10,4 +10,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Sidebar
