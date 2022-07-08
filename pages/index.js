@@ -13,9 +13,10 @@ export default function Home() {
       </Head>
 
       <Sidebar />
+      <Header />
       
       <main>
-        <Header />
+        
       </main>
     </div>
   )
