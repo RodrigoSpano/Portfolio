@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import About from '../components/aboutme/About'
 import Header from '../components/header/Header'
 import Sidebar from '../components/nav/Sidebar'
 import styles from '../styles/Home.module.css'
@@ -16,7 +17,7 @@ export default function Home() {
       <Header />
       
       <main>
-        
+        <About />
       </main>
     </div>
   )
