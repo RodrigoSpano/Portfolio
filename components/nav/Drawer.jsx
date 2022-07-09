@@ -22,7 +22,7 @@ function DrawerNav() {
       >
         <DrawerOverlay />
         <DrawerContent bgColor='#17192341' borderLeftRadius={20}>
-          <DrawerCloseButton color='white' bgColor='gray.900' w={10} _hover={{bg: 'gray.900'}} />
+          <DrawerCloseButton color='white' bgColor='gray.900' w={10} p={5} m={5} _hover={{bg: 'gray.900'}} />
           <DrawerBody py='20' userSelect='none' > 
 
             <Stack direction='column' alignItems='center' justifyContent='center' pt={20} gap={5} fontFamily='comfortaa, cursive' >
