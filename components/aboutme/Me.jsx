@@ -17,19 +17,19 @@ function Me() {
       })
     }
     if(!inView){
-      animation.start({ x: '40vw'})
+      animation.start({ x: '30vw'})
     }
   }, [inView] )
 
   return (
     <motion.div animate={animation}>
-      <Stack ref={ref} w='xl'>
+      <Stack ref={ref} w={{base:'xl', '2xl':'md'}}>
         <Heading as='h2' textAlign='center' fontFamily='Teko, sans-serif, cursive' color='orange.400' fontSize='6xl' >About me</Heading>
         
         <Stack p={5} borderRadius={20} bgColor='gray.900' boxShadow='0px 0px 22px -3px rgba(0,0,0,0.8)' >
           <Flex justifyContent='center' alignItems='center' gap={5}>
             <Avatar name='Rodrigo Spano' src='https://bit.ly/ryan-florence' size='xl' />
-            <Link href='/cv.pdf' download color='orange.300' border='1px solid orange' p={2} borderRadius={10} display='flex' gap={1} alignItems='center' flexDirection='row' _hover={{color:'orange.400'}}  >
+            <Link href='/assets/cv.pdf' download color='orange.300' border='1px solid orange' p={2} borderRadius={10} display='flex' gap={1} alignItems='center' flexDirection='row' _hover={{color:'orange.400'}}  >
               <Text>Download CV</Text>
               <BsDownload />
             </Link>

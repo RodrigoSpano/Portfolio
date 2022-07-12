@@ -26,10 +26,16 @@ function DrawerNav() {
           <DrawerBody py='20' userSelect='none' > 
 
             <Stack direction='column' alignItems='center' justifyContent='center' pt={20} gap={5} fontFamily='comfortaa, cursive' >
-              <Text variant='nav'>about me</Text>
-              <Text variant='nav'>projects</Text>
-              <Text variant='nav'>skills</Text>
-              <Text variant='nav'>contact me</Text>
+              <Link href='#about'>
+                <Text variant='nav'>about me</Text>
+              </Link>
+
+              <Link href='#projects'>
+                <Text variant='nav'>projects</Text>
+              </Link>
+              <Link href='#contact'>
+                <Text variant='nav'>contact me</Text>
+              </Link>
             </Stack>
 
           </DrawerBody>
