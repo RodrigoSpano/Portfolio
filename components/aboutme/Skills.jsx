@@ -12,8 +12,8 @@ function Skills() {
   useEffect(() => {
     if(inView){
       animation.start({
-        x:0,
-        transition:{type:'spring', bounce: 0.3, duration: 1, delay:0.2}
+        x:-30,
+        transition:{type:'spring', bounce: 0.5, duration: 1, delay:0.2}
       })
     }
     if(!inView){
@@ -27,7 +27,7 @@ function Skills() {
         <Heading as='h2' color='orange.400' fontFamily='Teko, sans-serif' fontSize='5xl' textAlign='center' >
           Skills
         </Heading>
-        <Stack gap={5} wrap='wrap' minW='lg' maxH={{base:'lg', md:'md'}} alignItems='center' justifyContent='center'>
+        <Stack px={10} gap={{md:5}} wrap='wrap' minW={{base:'md',md:'lg'}} maxH={{base:'sm', md:'md'}} alignItems='center' justifyContent='center'>
           <SkillsCard name={'Html'} img='/assets/htmlLogo.png' />
           <SkillsCard name={'Css'} img='/assets/cssLogo.jpeg' />
           <SkillsCard name={'Sass'} img='/assets/sassLogo.jpeg' />

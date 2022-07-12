@@ -23,7 +23,7 @@ function Me() {
 
   return (
     <motion.div animate={animation}>
-      <Stack ref={ref} w={{base:'xl', '2xl':'md'}}>
+      <Stack ref={ref} w={{base:'sm',md:'lg'}} px={10} >
         <Heading as='h2' textAlign='center' fontFamily='Teko, sans-serif, cursive' color='orange.400' fontSize='6xl' >About me</Heading>
         
         <Stack p={5} borderRadius={20} bgColor='gray.900' boxShadow='0px 0px 22px -3px rgba(0,0,0,0.8)' >
@@ -34,10 +34,10 @@ function Me() {
               <BsDownload />
             </Link>
           </Flex>
-          <Heading as='h2' color='gray.100' fontFamily='Comfortaa, cursive' textAlign='center' >
+          <Heading as='h2' color='gray.100' fontFamily='Comfortaa, cursive' textAlign='center' fontSize={{base:'xl',md:'3xl'}} >
             Rodrigo Spano
           </Heading>
-          <Text color='gray.300' lineHeight={2} fontFamily='Comfortaa, cursive' fontSize='sm'>
+          <Text color='gray.400' lineHeight={{md:2}} fontFamily='Comfortaa, cursive' fontSize={{base:'xs',md:'sm'}}>
             lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu lorem ipsu 
           </Text>
 
