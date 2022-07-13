@@ -16,7 +16,7 @@ const DB = [
   {
     name: 'Portfolio',
     src:'/assets/portfolio.png',
-    link:'https://palceholder.com',
+    link:'https://rodrigospano.vercel.app/',
     technology:['next.js','react','chakra-ui','framer-motion'],
     gh:'https://github.com/RodrigoSpano/Portfolio.git'
   },
