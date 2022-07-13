@@ -34,7 +34,7 @@ function Me() {
             <Flex direction='column' gap={2} justifyContent='center'>
               <Stack color='gray.500' flexDirection='row' alignItems='center' gap={1} >
                 <HiLocationMarker />
-                <Text fontSize='sm'>Buenos Aires, Argentina</Text>
+                <Text fontSize='sm' pb='1'>Buenos Aires, Argentina</Text>
               </Stack>
 
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 2 }}>
