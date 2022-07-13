@@ -23,7 +23,7 @@ function Skills() {
 
   return (
     <motion.div ref={ref} animate={animation}>
-      <Stack h='xl' minW='xs' justifyContent='center' gap={5}>
+      <Stack h='xl' minW='xs' justifyContent='center' gap={5} userSelect='none'>
         <Heading as='h2' color='orange.400' fontFamily='Teko, sans-serif' fontSize='5xl' textAlign='center' >
           Skills
         </Heading>

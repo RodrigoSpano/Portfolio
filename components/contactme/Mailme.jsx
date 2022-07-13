@@ -6,7 +6,7 @@ import * as Yup from 'yup'
 import emailjs from '@emailjs/browser'
 
 const textSchema = Yup.object().shape({
-  text: Yup.string().min(20, 'muy corto').required('required')
+  text: Yup.string().min(20, 'too short').required('required')
 })
 
 function Mailme() {
@@ -25,15 +25,15 @@ function Mailme() {
         let errors = {}
 
         if(!values.name){
-          errors.name = 'escribi un nombre valido'
+          errors.name = 'write a valid name'
         } else if(!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(values.name)){
-          errors.name = 'el nombre solo puede tener letras y espacios'
+          errors.name = 'name can only have letters and spaces'
         }
 
         if(!values.email){
-          errors.email = 'escribe un mail valido'
+          errors.email = 'write a valid email'
         } else if(!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(values.email)){
-          errors.email = 'el correo solo puede contener letras, numeros, puntos, guiones y guion bajo'
+          errors.email = 'Email can only contain letters, numbers, periods, hyphens, and underscores.'
         }
         return errors;
       }}
@@ -49,7 +49,7 @@ function Mailme() {
       }}  
     >
       {( {values, handleSubmit, handleChange, handleBlur, errors, touched} ) => (
-        <chakra.form ref={form} display='flex' flexDirection='column' gap={5} onSubmit={handleSubmit} color='gray.100'>
+        <chakra.form ref={form} display='flex' flexDirection='column' gap={5} onSubmit={handleSubmit} color='gray.100' userSelect='none'>
           <Stack>
             <label htmlFor='name' >Name</label>
             <Input name='name' id='name' type='text' placeholder='write ur name' value={values.name} onChange={handleChange} onBlur={handleBlur} color='gray.100' />
@@ -66,7 +66,7 @@ function Mailme() {
             {touched.text && errors.text && <Text color='red.400'>{errors.text}</Text>}
           </Stack>
           <Button type='submit' bgColor='orange' _hover={{color:'black', bg:'gray.300'}} >send</Button>
-          {sent && <Text textAlign='center' color='green.400'>enviado exitosamente!</Text>}
+          {sent && <Text textAlign='center' color='green.400'>successfully sent!</Text>}
         </chakra.form> 
         )}
     </Formik>
