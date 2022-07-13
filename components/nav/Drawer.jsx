@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
-import { Link, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerOverlay, Stack, Text, useDisclosure } from '@chakra-ui/react'
+import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerOverlay, Stack, Text, useDisclosure } from '@chakra-ui/react'
+import { Link } from 'react-scroll'
 import {motion} from 'framer-motion'
 import { CgMenuRight } from 'react-icons/cg'
 import { BsLinkedin } from 'react-icons/bs'
@@ -27,21 +28,27 @@ function DrawerNav() {
 
             <Stack direction='column' alignItems='center' justifyContent='center' pt={20} gap={5} fontFamily='comfortaa, cursive' >
 
+            <motion.div whileHover={{ scale: 1.3 }}>
+                <Link to='home' smooth={true} duration={500}>
+                  <Text variant='nav'>Home</Text>
+                </Link>
+              </motion.div>
+
               <motion.div whileHover={{ scale: 1.3 }}>
-                <Link href='#about'>
-                  <Text variant='nav'>about me</Text>
+                <Link to='about' smooth={true} duration={500}>
+                  <Text variant='nav'>About me</Text>
                 </Link>
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.1 }}>
-                <Link href='#projects'>
-                  <Text variant='nav'>projects</Text>
+                <Link to='projects' smooth={true} duration={500} >
+                  <Text variant='nav'>Projects</Text>
                 </Link>
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.1 }}>
-                <Link href='#contact'>
-                  <Text variant='nav'>contact me</Text>
+                <Link to='contact' smooth={true} duration={500} >
+                  <Text variant='nav'>Contact me</Text>
                 </Link>
               </motion.div>
             </Stack>

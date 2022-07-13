@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect'
 
 function Header() {
   return (
-    <Stack overflow='hidden' h='100vh' alignItems='center' justifyContent='center' >
+    <Stack id='home' overflow='hidden' h='100vh' alignItems='center' justifyContent='center' >
 
       <Stack pb='80'>
         <motion.div transition={{ duration: 3 }} initial={{x: '-100vw'}} animate={{ x: 0}}>
