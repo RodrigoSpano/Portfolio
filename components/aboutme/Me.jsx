@@ -30,7 +30,7 @@ function Me() {
         <Stack p={5} borderRadius={20} bgColor='gray.900' boxShadow='0px 0px 22px -3px rgba(0,0,0,0.8)' >
 
           <Flex justifyContent='center' alignItems='center' gap={5}>
-            <Avatar name='Rodrigo Spano' src='' size='xl' />
+            <Avatar name='Rodrigo Spano' src='/assets/foto.jpeg' size='xl' />
             <Flex direction='column' gap={2} justifyContent='center'>
               <Stack color='gray.500' flexDirection='row' alignItems='center' gap={1} >
                 <HiLocationMarker />
