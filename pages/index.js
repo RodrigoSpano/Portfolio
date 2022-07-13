@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import About from '../components/aboutme/About'
 import Contact from '../components/contactme/Contact'
+import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
 import Sidebar from '../components/nav/Sidebar'
 import Projects from '../components/projects/Projects'
@@ -23,6 +24,9 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }
