@@ -1,6 +1,7 @@
 import { Badge, Flex, Heading, Image, Link, Stack } from '@chakra-ui/react'
 import {v4 as uuid} from 'uuid'
 import { BsGithub } from 'react-icons/bs'
+import {motion} from 'framer-motion'
 
 function ProjectCard(props) {
   return (
@@ -8,7 +9,11 @@ function ProjectCard(props) {
       <Image src={props.src} alt={props.name} borderRadius={10} />
       <Flex direction='row' alignItems='center' gap={2} >
         <Heading as='h2' color='gray.300' textTransform='capitalize' fontFamily='Teko, sans-serif' >{props.name}</Heading>
-        <Link href={props.gh} isExternal color='gray.300' fontSize='20px' cursor='pointer' _hover={{color:'gray.500'}}><BsGithub/></Link>
+        <Link href={props.gh} isExternal color='gray.300' fontSize='20px' cursor='pointer'>
+          <motion.div whileHover={{ scale: 1.4 }}>
+            <BsGithub/>
+          </motion.div>
+        </Link>
       </Flex>
       <Flex gap={2}>
         {props.technology.map( el => (<Badge fontSize={{base:'x-small', md:'xs'}} colorScheme='orange' key={uuid()} >{el}</Badge>))}
