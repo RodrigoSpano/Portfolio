@@ -11,7 +11,6 @@ const themes = extendTheme({
           transition:'all ease 0.3s',
           _hover:{
             color: 'yellow.400',
-            fontSize:'3xl'
           }
         }
       }

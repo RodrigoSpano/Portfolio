@@ -37,10 +37,12 @@ function Me() {
                 <Text fontSize='sm'>Buenos Aires, Argentina</Text>
               </Stack>
 
-              <Link href='/assets/cv.pdf' download color='orange.300' border='1px solid orange' p={2} borderRadius={10} display='flex' gap={1} alignItems='center' justifyContent='center' flexDirection='row' _hover={{color:'orange.400'}}  >
-                <Text>Download CV</Text>
-                <BsDownload />
-              </Link>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 2 }}>
+                <Link href='/assets/cv.pdf' download color='orange.300' border='1px solid orange' p={2} borderRadius={10} display='flex' gap={1} alignItems='center' justifyContent='center' flexDirection='row' _hover={{color:'orange.400'}}  >
+                  <Text>Download CV</Text>
+                  <BsDownload />
+                </Link>
+              </motion.div>
             </Flex>
           </Flex>
 
