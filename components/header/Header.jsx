@@ -16,7 +16,7 @@ function Header() {
         </motion.div>
 
         <motion.div transition={{ duration: 3}} initial={{x: '100vw'}} animate={{ x: 0 }} >
-          <Heading as='h1' fontSize={{base:'4xl',md:'7xl'}} color='orange.400' fontFamily='Secular One, sans-serif'>
+          <Heading as='h1' fontSize={{base:'4xl',md:'6xl',lg:'8xl'}} color='orange.400' fontFamily='Secular One, sans-serif'>
           Rodrigo Spano
           </Heading>
         </motion.div>
