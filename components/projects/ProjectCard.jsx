@@ -15,7 +15,7 @@ function ProjectCard(props) {
           </motion.div>
         </Link>
       </Flex>
-      <Flex gap={2}>
+      <Flex gap={2} wrap='wrap'>
         {props.technology.map( el => (<Badge fontSize={{base:'x-small', md:'xs'}} colorScheme='orange' key={uuid()} >{el}</Badge>))}
       </Flex>
       <Link href={props.link} isExternal bgColor='orange.400' borderRadius={5} p={2} w={{base:'50px',md:'70px'}} fontSize={{base:'sm',md:'xl'}} textAlign='center' alignSelf='end' fontFamily='Teko, sans-serif' > Visit</Link>

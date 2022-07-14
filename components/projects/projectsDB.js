@@ -7,6 +7,13 @@ const DB = [
     gh:'https://github.com/RodrigoSpano/SneakersArg-Spano.git'
   },
   {
+    name:'Weather App',
+    src:'/assets/weatherApp.png',
+    link:'https://weather-app-spano.vercel.app/',
+    technology:['next.js','react','react-ui','openWeather API', 'framer-motion'],
+    gh:'https://github.com/RodrigoSpano/Weather-app.git'
+  },
+  {
     name: 'Task List',
     src:'/assets/taskList.png',
     link:'https://tasks-list-spano.netlify.app/',
