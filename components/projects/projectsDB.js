@@ -1,5 +1,11 @@
 const DB = [
   {
+    name:'Fylo Landing',
+    src:'/assets/fylo-landing.png',
+    link:'https://fylo-landing-rodrigo-spano.vercel.app/',
+    technology:['next.js','react','chakra-ui']
+  },
+  {
     name: 'SneakersArg',
     src:'/assets/allSneakers.png',
     link:'https://sneakers-arg.netlify.app/',
@@ -10,7 +16,7 @@ const DB = [
     name:'Weather App',
     src:'/assets/weatherApp.png',
     link:'https://weather-app-spano.vercel.app/',
-    technology:['next.js','react','react-ui','openWeather API', 'framer-motion'],
+    technology:['next.js','react','react-ui','openWeather API'],
     gh:'https://github.com/RodrigoSpano/Weather-app.git'
   },
   {
