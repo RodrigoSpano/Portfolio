@@ -1,5 +1,11 @@
 const DB = [
   {
+    name:'Pricing Component',
+    src:'/assets/pricing.png',
+    link:'https://pricing-component-rodrigo-spano.vercel.app/',
+    technology:['next.js', 'react', 'chakra-ui','redux']
+  },
+  {
     name:'Fylo Landing',
     src:'/assets/fylo-landing.png',
     link:'https://fylo-landing-rodrigo-spano.vercel.app/',
