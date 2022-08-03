@@ -3,13 +3,15 @@ const DB = [
     name:'Pricing Component',
     src:'/assets/pricing.png',
     link:'https://pricing-component-rodrigo-spano.vercel.app/',
-    technology:['next.js', 'react', 'chakra-ui','redux']
+    technology:['next.js', 'react', 'chakra-ui','redux'],
+    gh:'https://github.com/RodrigoSpano/Pricing-component-FrontEndMentor.git'
   },
   {
     name:'Fylo Landing',
     src:'/assets/fylo-landing.png',
     link:'https://fylo-landing-rodrigo-spano.vercel.app/',
-    technology:['next.js','react','chakra-ui']
+    technology:['next.js','react','chakra-ui'],
+    git:'https://github.com/RodrigoSpano/Fylo-landing-frontEndMentor.git'
   },
   {
     name: 'SneakersArg',
