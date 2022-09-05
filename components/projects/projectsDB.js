@@ -1,5 +1,12 @@
 const DB = [
   {
+    name:'appointment management app',
+    src:'/assets/pet-society.png',
+    link:'https://pet-society-lilac.vercel.app/',
+    technology:['Vite.js','Chakra-ui','redux','mongoDB'],
+    gh:'https://github.com/No-Country/c6-37-ft-mern.git'
+  },
+  {
     name:'Pricing Component',
     src:'/assets/pricing.png',
     link:'https://pricing-component-rodrigo-spano.vercel.app/',
