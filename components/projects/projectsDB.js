@@ -1,5 +1,12 @@
 const DB = [
   {
+    name: 'NFTs Landing Page',
+    src: '/assets/roots.png',
+    link: 'https://roots-challenge.vercel.app/',
+    technology: ['React.js', 'tailwindCSS', 'Redux', 'three.js'],
+    gh: 'https://github.com/RodrigoSpano/ROOTS-challenge.git',
+  },
+  {
     name: 'Pricing Component',
     src: '/assets/pricing.png',
     link: 'https://pricing-component-rodrigo-spano.vercel.app/',
