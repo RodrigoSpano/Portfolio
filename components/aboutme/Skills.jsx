@@ -37,6 +37,8 @@ function Skills() {
           <SkillsCard name={'Next.Js'} img='/assets/nextLogo.png' />
           <SkillsCard name={'Chakra-UI'} img='/assets/chakraLogo.png' />
           <SkillsCard name={'Git'} img='/assets/gitLogo.jpg' />
+          <SkillsCard name={'NodeJs'} img='/assets/node.png' />
+          <SkillsCard name={'MongoDB'} img='/assets/mongodb.png' />
 
         </Stack>
       </Stack>
