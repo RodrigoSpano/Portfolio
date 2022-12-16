@@ -50,7 +50,7 @@ function Me() {
             Rodrigo Spano
           </Heading>
           <Text color='gray.400' lineHeight={{md:2}} fontFamily='Comfortaa, cursive' fontSize={{base:'xs',md:'sm'}}>
-          I am a Front-End Developer and also studying Back-End to become Fullstack MERN (Mongo, Express, React, Node). Since I was very young I have been passionate about technology, always wanting to learn more and improve my knowledge in order to improve myself every day and give my best.
+          I am a FullStack. Since I was very young I have been passionate about technology, always wanting to learn more and improve my knowledge in order to improve myself every day and give my best.
           My goal is to be part of a development team and be able to grow professionally.
           </Text>
 
