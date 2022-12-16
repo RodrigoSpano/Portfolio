@@ -24,7 +24,7 @@ function Header() {
         <Box color='gray.100' fontFamily='Comfortaa, cursive' >
           <Typewriter
             options={{
-              strings: ['Front End Developer'],
+              strings: ['Full Stack Developer'],
               autoStart: true,
               loop: true,
             }}/>
