@@ -21,6 +21,22 @@ function Skills() {
     }
   }, [inView])
 
+  let skillsArr = [
+    {name: 'html', thumb: '/assets/htmlLogo.png'},
+    {name: 'css', thumb: '/assets/cssLogo.jpeg'},
+    {name: 'tailwindCss', thumb: '/assets/tailwindcss.png'},
+    {name: 'javascript', thumb: '/assets/jsLogo.png'},
+    {name: 'typescript', thumb: '/assets/tsLogo.png'},
+    {name: 'react', thumb: '/assets/reactLogo.png'},
+    {name: 'redux', thumb: '/assets/reduxLogo.png'},
+    {name: 'next', thumb: '/assets/nextLogo.png'},
+    {name: 'nodeJs', thumb: '/assets/node.png'},
+    {name: 'mongoDB', thumb: '/assets/mongodb.png'},
+    {name: 'jest', thumb: '/assets/jestLogo.png'},
+    {name: 'git', thumb: '/assets/gitLogo.jpg'},
+
+  ]
+
   return (
     <motion.div ref={ref} animate={animation}>
       <Stack h='xl' minW='xs' justifyContent='center' gap={5} userSelect='none'>
@@ -28,17 +44,11 @@ function Skills() {
           Skills
         </Heading>
         <Stack px={10} gap={{md:5}} wrap='wrap' minW={{base:'md',md:'lg'}} maxH={{base:'sm', md:'md'}} alignItems='center' justifyContent='center'>
-          <SkillsCard name={'Html'} img='/assets/htmlLogo.png' />
-          <SkillsCard name={'Css'} img='/assets/cssLogo.jpeg' />
-          <SkillsCard name={'Sass'} img='/assets/sassLogo.jpeg' />
-          <SkillsCard name={'Javascript'} img='/assets/jsLogo.png' />
-          <SkillsCard name={'React'} img='/assets/reactLogo.png' />
-          <SkillsCard name={'Redux'} img='/assets/reduxLogo.png' />
-          <SkillsCard name={'Next.Js'} img='/assets/nextLogo.png' />
-          <SkillsCard name={'Chakra-UI'} img='/assets/chakraLogo.png' />
-          <SkillsCard name={'Git'} img='/assets/gitLogo.jpg' />
-          <SkillsCard name={'NodeJs'} img='/assets/node.png' />
-          <SkillsCard name={'MongoDB'} img='/assets/mongodb.png' />
+          {
+            skillsArr.map((el) => (
+              <SkillsCard name={el.name} img={el.thumb} key={Math.random()} />
+            ))
+          }
 
         </Stack>
       </Stack>

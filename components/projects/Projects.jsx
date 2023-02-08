@@ -32,7 +32,7 @@ function Projects() {
   return (
     <motion.div ref={ref} animate={animation} >
       <Stack id='projects' minH='100vh' alignItems='center' justifyContent='center' userSelect='none' gap={10}>
-        <Heading as='h2' textTransform='uppercase' color='orange.400' fontFamily='Teko, sans-serif' fontSize='6xl' >Projects | {DB.length}</Heading>
+        <Heading as='h2' textTransform='uppercase' color='orange.400' fontFamily='Teko, sans-serif' fontSize='6xl' >Projects | {DB.length} (drag)</Heading>
         <motion.div ref={carousel} className='carousel' whileTap={{cursor: 'grabbing'}} >
           <motion.div
             drag='x'
